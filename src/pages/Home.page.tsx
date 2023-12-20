@@ -1,11 +1,15 @@
+import { Flex } from '@mantine/core';
 import { Welcome } from '../components/Welcome/Welcome';
-import { ColorSchemeToggle } from '../components/ColorSchemeToggle/ColorSchemeToggle';
 
 export function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+      <Flex direction="column" gap="sm">
+        <Welcome />
+        <Welcome />
+        <Welcome />
+        <Welcome />
+      </Flex>
     </>
   );
 }

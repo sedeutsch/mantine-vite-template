@@ -1,22 +1,21 @@
-import { Title, Text, Anchor } from '@mantine/core';
-import classes from './Welcome.module.css';
+import { useState } from 'react';
+import { Radio, Text, UnstyledButton, Flex } from '@mantine/core';
+// import classes from './Welcome.module.css';
+import classes from './CheckboxCard.module.css';
 
 export function Welcome() {
+  const [value, onChange] = useState(true);
   return (
     <>
-      <Title className={classes.title} ta="center" mt={100}>
-        Welcome to{' '}
-        <Text inherit variant="gradient" component="span" gradient={{ from: 'pink', to: 'yellow' }}>
-          Mantine
-        </Text>
-      </Title>
-      <Text c="dimmed" ta="center" size="lg" maw={580} mx="auto" mt="xl">
-        This starter Vite project includes a minimal setup, if you want to learn more on Mantine +
-        Vite integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/vite/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit pages/Home.page.tsx file.
+      <Text ta="center" size="lg" maw={400} mx="auto">
+        <UnstyledButton onClick={() => onChange(!value)} className={classes.button}>
+          <Radio checked={value} onChange={() => {}} tabIndex={-1} size="xs" mr="lg" aria-hidden />
+
+          <Flex gap="sm">
+            <Text size="md">A.</Text>
+            <Text size="md">Some sort of answer goes here</Text>
+          </Flex>
+        </UnstyledButton>
       </Text>
     </>
   );
