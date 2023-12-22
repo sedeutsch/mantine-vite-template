@@ -1,0 +1,27 @@
+.shadowBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.shadowXL {
+  box-shadow: var(--mantine-shadow-xl);
+}
+
+.shadowLG {
+  box-shadow: var(--mantine-shadow-lg);
+}
+
+.shadowMD {
+  box-shadow: var(--mantine-shadow-md);
+}
+
+.shadowSM {
+  box-shadow: var(--mantine-shadow-sm);
+}
+
+.shadowXS {
+  box-shadow: var(--mantine-shadow-xs);
+}
