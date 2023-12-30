@@ -1,5 +1,9 @@
 import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  /** Put your mantine theme override here */
+  fontSmoothing: true,
+  fontFamily: '"Source Sans 3", sans-serif',
+  headings: {
+    fontWeight: '600',
+  },
 });
