@@ -6,4 +6,7 @@ export const theme = createTheme({
   headings: {
     fontWeight: '600',
   },
+  label: {
+    fontWeight: '900',
+  },
 });
