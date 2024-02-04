@@ -5,7 +5,9 @@ interface MyInputProps extends BoxProps {
   label: string;
 }
 
-function Input() {
+const MyInput = createPolymorphicComponent<'button', MyInputProps>(
+  
+) {
   return <MyInput label="Input label" description="Input description" />;
 }
 
