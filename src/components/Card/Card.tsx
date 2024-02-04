@@ -12,7 +12,7 @@ export default function Card() {
               <Input size="md" radius="md" />
             </Input.Wrapper>
 
-            <Input.Wrapper label="Last name" size="md">
+            <Input.Wrapper label="Last name" description="Enter your last name here" size="md">
               <Input size="md" radius="md" />
             </Input.Wrapper>
 
